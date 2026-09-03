@@ -2,30 +2,24 @@
 
 A lightweight, mobile-first static site for Nathan Reed's pickleball referral links. Designed to be opened from a QR code or NFC tag at the court, so it loads fast and gets someone to a referral link in one tap.
 
+Visual identity: dark performance-sports theme (charcoal surfaces, electric lime accent, condensed athletic type).
+
 ## Files
 
 - `index.html` — page content and structure
 - `styles.css` — all styling, including the theme (see below)
-- `script.js` — small decorative script (tap sparkle, load-in animation); the referral links work fine without it
+- `script.js` — small decorative script (button press feedback); the referral links work fine without it
 - `assets/` — empty placeholder folder for any images you add later (e.g. `og-image.png` for social previews)
 
-## Deploy with GitHub Pages (no Claude Code needed)
+## Deploy / update on GitHub Pages
 
-1. Go to your existing GitHub repo (the one your pickleball app lives in), or create a new one.
-2. If you want this at its own URL, create a new repo instead — e.g. `nathan-pickleball-deals`.
-3. Click **Add file → Upload files**, drag in `index.html`, `styles.css`, `script.js`, and the `assets` folder, then commit.
-4. Go to **Settings → Pages**.
-5. Under **Build and deployment**, set **Source** to "Deploy from a branch," branch `main`, folder `/ (root)`. Save.
-6. GitHub will give you a URL like `https://yourusername.github.io/repo-name/` within a minute or two.
-7. Generate your QR code / program your NFC tag to point at that URL.
+If this is replacing files in your existing `nathan-pickleball-deals` repo: open the repo on GitHub, click into each file, click the pencil (edit) icon, delete the old contents, paste in the new version, and commit. Do this for `index.html`, `styles.css`, and `script.js`. The live site updates within a minute or two — no changes needed to your Pages settings.
 
-## Deploy with Claude Code instead
-
-If you'd rather do this from your terminal: point Claude Code at your local clone of the target repo, ask it to copy these four items in, commit, and push to `main` (or open a PR). Since Claude Code already has your GitHub credentials configured from your pickleball app, it can push directly.
+If you're starting fresh, see the original setup steps: create a repo, upload the four files, enable Pages under Settings → Pages (source: Deploy from a branch, branch `main`, folder `/`).
 
 ## Changing the theme later
 
-All colors, fonts, radii, and shadows live in the `:root { ... }` block at the top of `styles.css`. To re-theme the whole site, edit those custom properties — the HTML structure, referral links, and JS don't need to change. The decorative background elements (rainbow, sparkles, hearts, flowers) are grouped in the `.sky` block in both the HTML and CSS if you want to swap them for different decorations.
+All colors, fonts, radii, and shadows live in the `:root { ... }` block at the top of `styles.css`. To re-theme the whole site again, edit those custom properties — the HTML structure, referral links, and JS don't need to change. The decorative background (court lines, ball mark) is grouped in the `.court-bg` block in both the HTML and CSS if you want to swap it for something else.
 
 ## Before you go live
 
