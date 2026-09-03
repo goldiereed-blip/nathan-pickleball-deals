@@ -1,117 +1,173 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>Nathan's Pickleball Deals</title>
-<meta name="description" content="Nathan Reed's official pickleball referral deals. Save on Cookiegrips, 11SIX24, and Montis Pickleball gear with one tap.">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<!-- Open Graph -->
-<meta property="og:title" content="Nathan's Pickleball Deals">
-<meta property="og:description" content="Gear I use. Brands I trust. Deals you can use.">
-<meta property="og:type" content="website">
-<meta property="og:image" content="assets/og-image.png">
-<meta name="theme-color" content="#0B0D0C">
+  <title>Nathan's Pickleball Deals</title>
+  <meta name="description" content="Pickleball gear deals and referral offers from Nathan Reed." />
+  <meta name="theme-color" content="#0b0f0f" />
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@500;600;700&display=swap" rel="stylesheet">
+  <meta property="og:title" content="Nathan's Pickleball Deals" />
+  <meta property="og:description" content="Gear I use. Brands I trust. Deals you can use." />
+  <meta property="og:type" content="website" />
 
-<link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <a class="skip-link" href="#deals">Skip to deals</a>
 
-<!-- Decorative background layer (purely decorative, hidden from assistive tech) -->
-<div class="court-bg" aria-hidden="true">
-  <svg class="court-lines" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice">
-    <line x1="0" y1="40" x2="400" y2="40" />
-    <line x1="0" y1="150" x2="400" y2="150" />
-    <line x1="0" y1="260" x2="400" y2="260" />
-    <line x1="200" y1="40" x2="200" y2="260" />
-  </svg>
-  <svg class="ball-mark" viewBox="0 0 100 100" aria-hidden="true">
-    <circle cx="50" cy="50" r="46" />
-    <circle cx="30" cy="20" r="3.2" />
-    <circle cx="55" cy="14" r="3.2" />
-    <circle cx="78" cy="28" r="3.2" />
-    <circle cx="86" cy="55" r="3.2" />
-    <circle cx="72" cy="78" r="3.2" />
-    <circle cx="46" cy="86" r="3.2" />
-    <circle cx="18" cy="70" r="3.2" />
-    <circle cx="12" cy="42" r="3.2" />
-  </svg>
-</div>
+  <div class="page-shell">
+    <header class="hero">
+      <div class="court-grid" aria-hidden="true">
+        <span class="court-line court-line--v1"></span>
+        <span class="court-line court-line--v2"></span>
+        <span class="court-line court-line--h1"></span>
+        <span class="court-line court-line--h2"></span>
+        <span class="court-accent court-accent--1"></span>
+        <span class="court-accent court-accent--2"></span>
+      </div>
 
-<main>
-  <header class="hero">
-    <p class="eyebrow">Nathan Reed <span class="dot" aria-hidden="true">•</span> Pickleball Ambassador</p>
-    <h1>Nathan's<br><span class="accent">Pickleball</span> Deals</h1>
-    <p class="tagline">Gear I use. Brands I trust. Deals you can use.</p>
-  </header>
+      <div class="hero__inner">
+        <div class="eyebrow">
+          <span class="eyebrow__dot"></span>
+          Nathan Reed · Pickleball Ambassador
+        </div>
 
-  <section class="deals" aria-label="Referral deals">
+        <div class="hero__content">
+          <div>
+            <p class="hero__kicker">COURT-TESTED DEALS</p>
+            <h1>Nathan's<br><span>Pickleball Deals</span></h1>
+            <p class="hero__copy">Gear I use. Brands I trust. Deals you can use.</p>
+          </div>
 
-    <article class="card">
-      <p class="card-meta">Gear Deal 01 <span class="tag">Partner Deal</span></p>
-      <h2 class="brand">Cookiegrips</h2>
-      <p class="discount">10<span class="unit">%</span><span class="off">OFF</span></p>
-      <p class="card-desc">Grippy, sweat-resistant paddle overgrips built to hold up through long rallies.</p>
-      <a
-        class="cta"
-        href="https://cookiegrips.com/?ref=NATHANREED"
-        target="_blank"
-        rel="noopener noreferrer sponsored"
-        data-press="true"
-      >
-        Get the Deal <span class="arrow" aria-hidden="true">→</span>
-        <span class="visually-hidden">— opens Cookiegrips in a new tab using Nathan's referral link</span>
-      </a>
-    </article>
+          <div class="ball-mark" aria-hidden="true">
+            <div class="ball-mark__ball">
+              <span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span>
+              <span></span>
+            </div>
+            <div class="ball-mark__label">PLAY MORE<br>PAY LESS</div>
+          </div>
+        </div>
 
-    <article class="card">
-      <p class="card-meta">Gear Deal 02 <span class="tag">Partner Deal</span></p>
-      <h2 class="brand">11SIX24</h2>
-      <p class="discount">$10<span class="off">OFF</span></p>
-      <p class="card-desc">Court-ready apparel and accessories built for players who want performance and style.</p>
-      <a
-        class="cta"
-        href="https://11six24.com?sca_ref=10312281.qNqyfbdDSy"
-        target="_blank"
-        rel="noopener noreferrer sponsored"
-        data-press="true"
-      >
-        Get the Deal <span class="arrow" aria-hidden="true">→</span>
-        <span class="visually-hidden">— opens 11SIX24 in a new tab using Nathan's referral link</span>
-      </a>
-    </article>
+        <a class="hero__jump" href="#deals">
+          View deals
+          <span aria-hidden="true">↓</span>
+        </a>
+      </div>
+    </header>
 
-    <article class="card">
-      <p class="card-meta">Gear Deal 03 <span class="tag">Partner Deal</span></p>
-      <h2 class="brand">Montis Pickleball</h2>
-      <p class="discount">$10<span class="off">OFF</span></p>
-      <p class="card-desc">Premium paddles and gear engineered for players who take their game seriously.</p>
-      <a
-        class="cta"
-        href="https://montispickleball.com?sca_ref=8770235.AbkU0dHmMoLE"
-        target="_blank"
-        rel="noopener noreferrer sponsored"
-        data-press="true"
-      >
-        Get the Deal <span class="arrow" aria-hidden="true">→</span>
-        <span class="visually-hidden">— opens Montis Pickleball in a new tab using Nathan's referral link</span>
-      </a>
-    </article>
+    <main>
+      <section class="deals-section" id="deals" aria-labelledby="deals-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-heading__eyebrow">NATHAN APPROVED</p>
+            <h2 id="deals-title">Current Deals</h2>
+          </div>
+          <p class="section-heading__copy">
+            These are brands and gear I recommend to players I meet on the court.
+          </p>
+        </div>
 
-  </section>
+        <div class="deal-grid">
+          <article class="deal-card">
+            <div class="deal-card__top">
+              <span class="deal-card__index">GEAR DEAL 01</span>
+              <span class="deal-card__status">ACTIVE</span>
+            </div>
 
-  <p class="fine-print">These are brands and gear I recommend to players I meet on the court. Tap a deal to go straight to the brand's site — no codes to copy.</p>
+            <div class="deal-card__body">
+              <h3>Cookiegrips</h3>
+              <div class="deal-card__offer">
+                <span class="deal-card__amount">10%</span>
+                <span class="deal-card__off">OFF</span>
+              </div>
+              <p>Upgrade your grip and save on your order through Nathan's referral link.</p>
+            </div>
 
-  <footer class="site-footer">
-    <p class="signature">NATHAN REED<br><span>Pickleball Ambassador</span></p>
-    <p class="motto">Play more. Pay less.</p>
-  </footer>
-</main>
+            <a
+              class="deal-card__cta"
+              href="https://cookiegrips.com/?ref=NATHANREED"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-brand="Cookiegrips"
+            >
+              Get 10% Off
+              <span aria-hidden="true">→</span>
+            </a>
+          </article>
 
-<script src="script.js"></script>
+          <article class="deal-card">
+            <div class="deal-card__top">
+              <span class="deal-card__index">GEAR DEAL 02</span>
+              <span class="deal-card__status">ACTIVE</span>
+            </div>
+
+            <div class="deal-card__body">
+              <h3>11SIX24</h3>
+              <div class="deal-card__offer">
+                <span class="deal-card__amount">$10</span>
+                <span class="deal-card__off">OFF</span>
+              </div>
+              <p>Save on your next 11SIX24 order using Nathan's referral link.</p>
+            </div>
+
+            <a
+              class="deal-card__cta"
+              href="https://11six24.com?sca_ref=10312281.qNqyfbdDSy"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-brand="11SIX24"
+            >
+              Save $10
+              <span aria-hidden="true">→</span>
+            </a>
+          </article>
+
+          <article class="deal-card">
+            <div class="deal-card__top">
+              <span class="deal-card__index">GEAR DEAL 03</span>
+              <span class="deal-card__status">ACTIVE</span>
+            </div>
+
+            <div class="deal-card__body">
+              <h3>Montis Pickleball</h3>
+              <div class="deal-card__offer">
+                <span class="deal-card__amount">$10</span>
+                <span class="deal-card__off">OFF</span>
+              </div>
+              <p>Save on Montis Pickleball gear when you shop through Nathan's referral link.</p>
+            </div>
+
+            <a
+              class="deal-card__cta"
+              href="https://montispickleball.com?sca_ref=8770235.AbkU0dHmMoLE"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-brand="Montis Pickleball"
+            >
+              Save $10
+              <span aria-hidden="true">→</span>
+            </a>
+          </article>
+        </div>
+
+        <p class="referral-note">
+          Referral links may earn Nathan ambassador credit when you make a purchase.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <strong>NATHAN REED</strong>
+        <span>Pickleball Ambassador</span>
+      </div>
+      <p>Play more. Pay less.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

@@ -1,28 +1,39 @@
 # Nathan's Pickleball Deals
 
-A lightweight, mobile-first static site for Nathan Reed's pickleball referral links. Designed to be opened from a QR code or NFC tag at the court, so it loads fast and gets someone to a referral link in one tap.
-
-Visual identity: dark performance-sports theme (charcoal surfaces, electric lime accent, condensed athletic type).
+A lightweight static landing page for Nathan Reed's pickleball ambassador referral links.
 
 ## Files
 
-- `index.html` — page content and structure
-- `styles.css` — all styling, including the theme (see below)
-- `script.js` — small decorative script (button press feedback); the referral links work fine without it
-- `assets/` — empty placeholder folder for any images you add later (e.g. `og-image.png` for social previews)
+- `index.html` — page content and referral links
+- `styles.css` — complete visual design
+- `script.js` — minimal interaction script
 
-## Deploy / update on GitHub Pages
+## Deploy on GitHub Pages
 
-If this is replacing files in your existing `nathan-pickleball-deals` repo: open the repo on GitHub, click into each file, click the pencil (edit) icon, delete the old contents, paste in the new version, and commit. Do this for `index.html`, `styles.css`, and `script.js`. The live site updates within a minute or two — no changes needed to your Pages settings.
+If this repository is already published through GitHub Pages:
 
-If you're starting fresh, see the original setup steps: create a repo, upload the four files, enable Pages under Settings → Pages (source: Deploy from a branch, branch `main`, folder `/`).
+1. Replace the existing `index.html`, `styles.css`, and `script.js` files with these versions.
+2. Commit the changes to the branch GitHub Pages currently uses.
+3. GitHub Pages will update the live site automatically after the new commit is deployed.
 
-## Changing the theme later
+If GitHub Pages is not already configured:
 
-All colors, fonts, radii, and shadows live in the `:root { ... }` block at the top of `styles.css`. To re-theme the whole site again, edit those custom properties — the HTML structure, referral links, and JS don't need to change. The decorative background (court lines, ball mark) is grouped in the `.court-bg` block in both the HTML and CSS if you want to swap it for something else.
+1. Open the repository on GitHub.
+2. Go to **Settings → Pages**.
+3. Under **Build and deployment**, choose **Deploy from a branch**.
+4. Select the branch containing these files (commonly `main`) and the `/ (root)` folder.
+5. Save.
 
-## Before you go live
+## Referral links currently included
 
-- Double-check all three referral URLs are intact (they're easy to accidentally "clean up" in an editor's autoformat).
-- Add a real `assets/og-image.png` (1200×630px) if you want a nice preview when the link is shared in texts/social apps — otherwise remove the `og:image` line in `index.html`.
-- Test on an actual phone at ~375px width and on real cell signal if you can.
+- Cookiegrips — 10% off
+- 11SIX24 — $10 off
+- Montis Pickleball — $10 off
+
+Referral URLs are stored directly in `index.html`.
+
+## Updating a deal later
+
+Search `index.html` for the brand name. Update the brand name, offer text, supporting copy, and `href` value as needed.
+
+The visual theme is controlled with CSS custom properties at the top of `styles.css`, so the main palette can be changed quickly without rebuilding the page.
