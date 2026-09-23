@@ -505,10 +505,10 @@ h1 span {
     align-items: end;
   }
 
-    .deal-grid {
+  .deal-grid {
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   }
-   
+
   .deal-card {
     min-height: 430px;
   }
